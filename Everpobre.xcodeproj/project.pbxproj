@@ -12,6 +12,7 @@
 		DB4E8B741A7F916C00B5EC78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4E8B731A7F916C00B5EC78 /* Images.xcassets */; };
 		DB4E8B771A7F916C00B5EC78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4E8B751A7F916C00B5EC78 /* LaunchScreen.xib */; };
 		DB4E8B831A7F916D00B5EC78 /* EverpobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */; };
+		DB4E8B8F1A7F959900B5EC78 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B8D1A7F959900B5EC78 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		DB4E8B7C1A7F916C00B5EC78 /* EverpobreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverpobreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4E8B811A7F916D00B5EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverpobreTests.m; sourceTree = "<group>"; };
+		DB4E8B8E1A7F959900B5EC78 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		DB4E8B601A7F916C00B5EC78 = {
 			isa = PBXGroup;
 			children = (
+				DB4E8B8C1A7F950000B5EC78 /* Models */,
 				DB4E8B6B1A7F916C00B5EC78 /* Everpobre */,
 				DB4E8B7F1A7F916C00B5EC78 /* EverpobreTests */,
 				DB4E8B6A1A7F916C00B5EC78 /* Products */,
@@ -109,6 +112,14 @@
 				DB4E8B811A7F916D00B5EC78 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB4E8B8C1A7F950000B5EC78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB4E8B8D1A7F959900B5EC78 /* Model.xcdatamodeld */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			files = (
 				DB4E8B721A7F916C00B5EC78 /* AppDelegate.m in Sources */,
 				DB4E8B6F1A7F916C00B5EC78 /* main.m in Sources */,
+				DB4E8B8F1A7F959900B5EC78 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +416,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB4E8B8D1A7F959900B5EC78 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB4E8B8E1A7F959900B5EC78 /* Model.xcdatamodel */,
+			);
+			currentVersion = DB4E8B8E1A7F959900B5EC78 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DB4E8B611A7F916C00B5EC78 /* Project object */;
 }
