@@ -48,9 +48,12 @@
     
     for (id key  in [self observableKeys]) {
         
+        
+        // Opciones para que te pase valor antiguo y nuevo
+        //NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
         [self addObserver:self
                forKeyPath:key
-                  options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld //Observa el valor nuevo y el veijo
+                  options:0 //Observa el valor nuevo y el viejo
                   context:NULL];
     }
     
