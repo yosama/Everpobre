@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "AGTCoreDataStack.h"
+#import "YOSNotebook.h"
+#import "YOSNote.h"
+#import "YOSEverpobreBaseClass.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) AGTCoreDataStack *stack;
 
 @end
 
@@ -20,6 +26,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // Creamos datos
+    [self createDummyData];
+    
     return YES;
 }
 
@@ -44,5 +54,114 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
+-(void) createDummyData {
+    
+    // Borramos
+    [self.stack zapAllData];
+    
+    // creamos los datos
+    YOSNotebook * nb = [YOSNotebook notebookWithName:@"Ex-novias para el recuerdo"
+                                             context:self.stack.context];
+    
+    [YOSNote noteWithName:@"Mariana"
+                 notebook:nb
+                  context:self.stack.context];
+    
+    [YOSNote noteWithName:@"Camila Davalo"
+                 notebook:nb
+                  context:self.stack.context];
+    [YOSNote noteWithName:@"Pampita"
+                 notebook:nb
+                  context:self.stack.context];
+    
+    
+    // Fisgoneamos
+    
+    NSLog(@"Libreta: %@",nb);
+    NSLog(@"Exs: %@",nb.notes);
+    
+}
+
+
+-(void) trastearConDatos {
+    
+    YOSNotebook *nb2 = [YOSNotebook notebookWithName:@"Ideas de Apps"
+                                            context:self.stack.context];
+    
+    YOSNote *iCachete = [YOSNote noteWithName:@"iCachete"
+                                     notebook:nb2
+                                      context:self.stack.context];
+    // Comprobar que modificationDate se actualiza
+    
+    NSLog(@"Antes: %@",iCachete.modificationDate);
+    
+    iCachete.text = @"App educativa para reforzar la coordinacion motora fina y los reflejos";
+    
+    NSLog(@"Despues: %@", iCachete.modificationDate);
+
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[YOSNote entityName]];
+    
+    request.fetchBatchSize = 20;
+    request.sortDescriptors = @[[
+                                 NSSortDescriptor
+                                 sortDescriptorWithKey:YOSNoteAttributes.name
+                                 ascending:YES selector:@selector(caseInsensitiveCompare:)],
+                                [NSSortDescriptor
+                                 sortDescriptorWithKey:YOSNoteAttributes.modificationDate
+                                 ascending:NO]];
+    
+    // Predicado para hacer queries
+    request.predicate = [NSPredicate predicateWithFormat:@"notebook == %@",nb2];
+    
+    
+    
+    NSError *err = nil;
+    NSArray *res = [self.stack.context executeFetchRequest:request error:&err];
+    
+    
+    if (!res) {
+        // la cagamos
+        NSLog(@"Error al buscar: %@",err);
+    }
+    
+    NSLog(@"Numero de libretas: %lu", (unsigned long)[res count]);
+    NSLog(@"Las libretas: %@", res);
+    NSLog(@"Clase: %@",[res class]);
+    
+    
+    //borrar
+    [self.stack.context deleteObject:nb2];
+    request.predicate = nil;
+    
+    res = [self.stack.context executeFetchRequest:request
+                                            error:&err];
+    
+    
+    if (!res) {
+        NSLog(@"Error al buscar de nuevo: %@", res);
+    }
+    
+    NSLog(@"Notas existentes: %@",res);
+    
+    // Guardamos
+    
+    [self.stack saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"Error al guardar, caguento. %@",error);
+    }];
+    
+    
+}
+
+
+
+
+
+
+
+
 
 @end

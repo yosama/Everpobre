@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB4D041B1A80CBF7001A43BB /* YOSEverpobreBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D041A1A80CBF7001A43BB /* YOSEverpobreBaseClass.m */; };
+		DB4D04221A80D0AE001A43BB /* YOSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D041D1A80D0AE001A43BB /* YOSNote.m */; };
+		DB4D04231A80D0AE001A43BB /* YOSNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D041F1A80D0AE001A43BB /* YOSNotebook.m */; };
+		DB4D04241A80D0AE001A43BB /* YOSPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D04211A80D0AE001A43BB /* YOSPhotoContainer.m */; };
+		DB4D042D1A80D189001A43BB /* _YOSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D04261A80D189001A43BB /* _YOSNote.m */; };
+		DB4D042E1A80D189001A43BB /* _YOSNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D04281A80D189001A43BB /* _YOSNotebook.m */; };
+		DB4D042F1A80D189001A43BB /* _YOSPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D042A1A80D189001A43BB /* _YOSPhotoContainer.m */; };
+		DB4D04301A80D189001A43BB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB4D042B1A80D189001A43BB /* Model.xcdatamodeld */; };
+		DB4D04331A80D879001A43BB /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4D04321A80D879001A43BB /* AGTCoreDataStack.m */; };
 		DB4E8B6F1A7F916C00B5EC78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B6E1A7F916C00B5EC78 /* main.m */; };
 		DB4E8B721A7F916C00B5EC78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B711A7F916C00B5EC78 /* AppDelegate.m */; };
 		DB4E8B741A7F916C00B5EC78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4E8B731A7F916C00B5EC78 /* Images.xcassets */; };
 		DB4E8B771A7F916C00B5EC78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4E8B751A7F916C00B5EC78 /* LaunchScreen.xib */; };
 		DB4E8B831A7F916D00B5EC78 /* EverpobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */; };
-		DB4E8B8F1A7F959900B5EC78 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B8D1A7F959900B5EC78 /* Model.xcdatamodeld */; };
-		DB4E8B9C1A7FAB4D00B5EC78 /* _YOSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B911A7FAB4D00B5EC78 /* _YOSNote.m */; };
-		DB4E8B9D1A7FAB4D00B5EC78 /* _YOSNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B931A7FAB4D00B5EC78 /* _YOSNotebook.m */; };
-		DB4E8B9E1A7FAB4D00B5EC78 /* _YOSPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B951A7FAB4D00B5EC78 /* _YOSPhotoContainer.m */; };
-		DB4E8B9F1A7FAB4D00B5EC78 /* YOSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B971A7FAB4D00B5EC78 /* YOSNote.m */; };
-		DB4E8BA01A7FAB4D00B5EC78 /* YOSNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B991A7FAB4D00B5EC78 /* YOSNotebook.m */; };
-		DB4E8BA11A7FAB4D00B5EC78 /* YOSPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B9B1A7FAB4D00B5EC78 /* YOSPhotoContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB4D04191A80CBF7001A43BB /* YOSEverpobreBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSEverpobreBaseClass.h; path = Everpobre/YOSEverpobreBaseClass.h; sourceTree = "<group>"; };
+		DB4D041A1A80CBF7001A43BB /* YOSEverpobreBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSEverpobreBaseClass.m; path = Everpobre/YOSEverpobreBaseClass.m; sourceTree = "<group>"; };
+		DB4D041C1A80D0AE001A43BB /* YOSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSNote.h; path = Everpobre/YOSNote.h; sourceTree = "<group>"; };
+		DB4D041D1A80D0AE001A43BB /* YOSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSNote.m; path = Everpobre/YOSNote.m; sourceTree = "<group>"; };
+		DB4D041E1A80D0AE001A43BB /* YOSNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSNotebook.h; path = Everpobre/YOSNotebook.h; sourceTree = "<group>"; };
+		DB4D041F1A80D0AE001A43BB /* YOSNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSNotebook.m; path = Everpobre/YOSNotebook.m; sourceTree = "<group>"; };
+		DB4D04201A80D0AE001A43BB /* YOSPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSPhotoContainer.h; path = Everpobre/YOSPhotoContainer.h; sourceTree = "<group>"; };
+		DB4D04211A80D0AE001A43BB /* YOSPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSPhotoContainer.m; path = Everpobre/YOSPhotoContainer.m; sourceTree = "<group>"; };
+		DB4D04251A80D189001A43BB /* _YOSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _YOSNote.h; path = Everpobre/_YOSNote.h; sourceTree = "<group>"; };
+		DB4D04261A80D189001A43BB /* _YOSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _YOSNote.m; path = Everpobre/_YOSNote.m; sourceTree = "<group>"; };
+		DB4D04271A80D189001A43BB /* _YOSNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _YOSNotebook.h; path = Everpobre/_YOSNotebook.h; sourceTree = "<group>"; };
+		DB4D04281A80D189001A43BB /* _YOSNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _YOSNotebook.m; path = Everpobre/_YOSNotebook.m; sourceTree = "<group>"; };
+		DB4D04291A80D189001A43BB /* _YOSPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _YOSPhotoContainer.h; path = Everpobre/_YOSPhotoContainer.h; sourceTree = "<group>"; };
+		DB4D042A1A80D189001A43BB /* _YOSPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _YOSPhotoContainer.m; path = Everpobre/_YOSPhotoContainer.m; sourceTree = "<group>"; };
+		DB4D042C1A80D189001A43BB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DB4D04311A80D879001A43BB /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataStack.h; path = Everpobre/AGTCoreDataStack.h; sourceTree = "<group>"; };
+		DB4D04321A80D879001A43BB /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataStack.m; path = Everpobre/AGTCoreDataStack.m; sourceTree = "<group>"; };
 		DB4E8B691A7F916C00B5EC78 /* Everpobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everpobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4E8B6D1A7F916C00B5EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB4E8B6E1A7F916C00B5EC78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,19 +61,6 @@
 		DB4E8B7C1A7F916C00B5EC78 /* EverpobreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverpobreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4E8B811A7F916D00B5EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverpobreTests.m; sourceTree = "<group>"; };
-		DB4E8B8E1A7F959900B5EC78 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		DB4E8B901A7FAB4D00B5EC78 /* _YOSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _YOSNote.h; sourceTree = "<group>"; };
-		DB4E8B911A7FAB4D00B5EC78 /* _YOSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _YOSNote.m; sourceTree = "<group>"; };
-		DB4E8B921A7FAB4D00B5EC78 /* _YOSNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _YOSNotebook.h; sourceTree = "<group>"; };
-		DB4E8B931A7FAB4D00B5EC78 /* _YOSNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _YOSNotebook.m; sourceTree = "<group>"; };
-		DB4E8B941A7FAB4D00B5EC78 /* _YOSPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _YOSPhotoContainer.h; sourceTree = "<group>"; };
-		DB4E8B951A7FAB4D00B5EC78 /* _YOSPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _YOSPhotoContainer.m; sourceTree = "<group>"; };
-		DB4E8B961A7FAB4D00B5EC78 /* YOSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOSNote.h; sourceTree = "<group>"; };
-		DB4E8B971A7FAB4D00B5EC78 /* YOSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOSNote.m; sourceTree = "<group>"; };
-		DB4E8B981A7FAB4D00B5EC78 /* YOSNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOSNotebook.h; sourceTree = "<group>"; };
-		DB4E8B991A7FAB4D00B5EC78 /* YOSNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOSNotebook.m; sourceTree = "<group>"; };
-		DB4E8B9A1A7FAB4D00B5EC78 /* YOSPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOSPhotoContainer.h; sourceTree = "<group>"; };
-		DB4E8B9B1A7FAB4D00B5EC78 /* YOSPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOSPhotoContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,19 +84,6 @@
 		DB4E8B601A7F916C00B5EC78 = {
 			isa = PBXGroup;
 			children = (
-				DB4E8B901A7FAB4D00B5EC78 /* _YOSNote.h */,
-				DB4E8B911A7FAB4D00B5EC78 /* _YOSNote.m */,
-				DB4E8B921A7FAB4D00B5EC78 /* _YOSNotebook.h */,
-				DB4E8B931A7FAB4D00B5EC78 /* _YOSNotebook.m */,
-				DB4E8B941A7FAB4D00B5EC78 /* _YOSPhotoContainer.h */,
-				DB4E8B951A7FAB4D00B5EC78 /* _YOSPhotoContainer.m */,
-				DB4E8B961A7FAB4D00B5EC78 /* YOSNote.h */,
-				DB4E8B971A7FAB4D00B5EC78 /* YOSNote.m */,
-				DB4E8B981A7FAB4D00B5EC78 /* YOSNotebook.h */,
-				DB4E8B991A7FAB4D00B5EC78 /* YOSNotebook.m */,
-				DB4E8B9A1A7FAB4D00B5EC78 /* YOSPhotoContainer.h */,
-				DB4E8B9B1A7FAB4D00B5EC78 /* YOSPhotoContainer.m */,
-				DB4E8B8C1A7F950000B5EC78 /* Models */,
 				DB4E8B6B1A7F916C00B5EC78 /* Everpobre */,
 				DB4E8B7F1A7F916C00B5EC78 /* EverpobreTests */,
 				DB4E8B6A1A7F916C00B5EC78 /* Products */,
@@ -109,6 +102,7 @@
 		DB4E8B6B1A7F916C00B5EC78 /* Everpobre */ = {
 			isa = PBXGroup;
 			children = (
+				DB4E8B8C1A7F950000B5EC78 /* Models */,
 				DB4E8B701A7F916C00B5EC78 /* AppDelegate.h */,
 				DB4E8B711A7F916C00B5EC78 /* AppDelegate.m */,
 				DB4E8B731A7F916C00B5EC78 /* Images.xcassets */,
@@ -147,9 +141,34 @@
 		DB4E8B8C1A7F950000B5EC78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DB4E8B8D1A7F959900B5EC78 /* Model.xcdatamodeld */,
+				DB4D04311A80D879001A43BB /* AGTCoreDataStack.h */,
+				DB4D04321A80D879001A43BB /* AGTCoreDataStack.m */,
+				DB4D041C1A80D0AE001A43BB /* YOSNote.h */,
+				DB4D041D1A80D0AE001A43BB /* YOSNote.m */,
+				DB4D041E1A80D0AE001A43BB /* YOSNotebook.h */,
+				DB4D041F1A80D0AE001A43BB /* YOSNotebook.m */,
+				DB4D04201A80D0AE001A43BB /* YOSPhotoContainer.h */,
+				DB4D04211A80D0AE001A43BB /* YOSPhotoContainer.m */,
+				DB4E8BA21A7FABC500B5EC78 /* Machine */,
+				DB4D04191A80CBF7001A43BB /* YOSEverpobreBaseClass.h */,
+				DB4D041A1A80CBF7001A43BB /* YOSEverpobreBaseClass.m */,
+				DB4D042B1A80D189001A43BB /* Model.xcdatamodeld */,
 			);
 			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DB4E8BA21A7FABC500B5EC78 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				DB4D04251A80D189001A43BB /* _YOSNote.h */,
+				DB4D04261A80D189001A43BB /* _YOSNote.m */,
+				DB4D04271A80D189001A43BB /* _YOSNotebook.h */,
+				DB4D04281A80D189001A43BB /* _YOSNotebook.m */,
+				DB4D04291A80D189001A43BB /* _YOSPhotoContainer.h */,
+				DB4D042A1A80D189001A43BB /* _YOSPhotoContainer.m */,
+			);
+			name = Machine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,15 +270,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4D04331A80D879001A43BB /* AGTCoreDataStack.m in Sources */,
 				DB4E8B721A7F916C00B5EC78 /* AppDelegate.m in Sources */,
-				DB4E8B9D1A7FAB4D00B5EC78 /* _YOSNotebook.m in Sources */,
-				DB4E8B9F1A7FAB4D00B5EC78 /* YOSNote.m in Sources */,
-				DB4E8B9E1A7FAB4D00B5EC78 /* _YOSPhotoContainer.m in Sources */,
-				DB4E8BA01A7FAB4D00B5EC78 /* YOSNotebook.m in Sources */,
-				DB4E8B9C1A7FAB4D00B5EC78 /* _YOSNote.m in Sources */,
+				DB4D042D1A80D189001A43BB /* _YOSNote.m in Sources */,
+				DB4D04241A80D0AE001A43BB /* YOSPhotoContainer.m in Sources */,
+				DB4D041B1A80CBF7001A43BB /* YOSEverpobreBaseClass.m in Sources */,
+				DB4D042E1A80D189001A43BB /* _YOSNotebook.m in Sources */,
+				DB4D04221A80D0AE001A43BB /* YOSNote.m in Sources */,
 				DB4E8B6F1A7F916C00B5EC78 /* main.m in Sources */,
-				DB4E8B8F1A7F959900B5EC78 /* Model.xcdatamodeld in Sources */,
-				DB4E8BA11A7FAB4D00B5EC78 /* YOSPhotoContainer.m in Sources */,
+				DB4D04301A80D189001A43BB /* Model.xcdatamodeld in Sources */,
+				DB4D04231A80D0AE001A43BB /* YOSNotebook.m in Sources */,
+				DB4D042F1A80D189001A43BB /* _YOSPhotoContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +463,7 @@
 				DB4E8B881A7F916D00B5EC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB4E8B891A7F916D00B5EC78 /* Build configuration list for PBXNativeTarget "EverpobreTests" */ = {
 			isa = XCConfigurationList;
@@ -450,17 +472,19 @@
 				DB4E8B8B1A7F916D00B5EC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DB4E8B8D1A7F959900B5EC78 /* Model.xcdatamodeld */ = {
+		DB4D042B1A80D189001A43BB /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DB4E8B8E1A7F959900B5EC78 /* Model.xcdatamodel */,
+				DB4D042C1A80D189001A43BB /* Model.xcdatamodel */,
 			);
-			currentVersion = DB4E8B8E1A7F959900B5EC78 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = DB4D042C1A80D189001A43BB /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Everpobre/Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

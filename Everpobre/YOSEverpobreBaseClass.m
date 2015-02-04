@@ -43,7 +43,7 @@
 
 -(void) setupKVO {
     
-    // Alta en notigicaciones para las propiedades
+    // Alta en notificaciones para las propiedades
     // que quiero observar
     
     for (id key  in [self observableKeys]) {
@@ -65,7 +65,6 @@
     
     return nil;
 }
-
 
 
 -(void) tearDownKVO {
