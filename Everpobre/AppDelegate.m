@@ -11,6 +11,8 @@
 #import "YOSNotebook.h"
 #import "YOSNote.h"
 #import "YOSEverpobreBaseClass.h"
+#import "YOSNotebooksViewController.h"
+#import "UIViewController+Navigation.h"
 
 @interface AppDelegate ()
 
@@ -27,8 +29,40 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    // Create the stack
+    self.stack  = [AGTCoreDataStack coreDataStackWithModelName:@"Model"];
+    
     // Creamos datos
     [self createDummyData];
+    
+    //
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[YOSNotebook entityName]];
+    
+    req.fetchBatchSize = 30;
+    
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:YOSNotebookAttributes.name
+                                                          ascending:YES selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor sortDescriptorWithKey:YOSNoteAttributes.modificationDate
+                                                          ascending:NO]];
+    
+    
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                         managedObjectContext:self.stack.context
+                                                                           sectionNameKeyPath:nil cacheName:nil];
+    
+    
+    // Create the controller
+    YOSNotebooksViewController *notebookVC = [[YOSNotebooksViewController alloc] initWithFetchedResultsController:fc
+                                                                                                            style:UITableViewStylePlain];
+    
+    
+    
+    // assign root controllNer
+    self.window.rootViewController = [notebookVC yosWrapperInNavigation];
+    
+    
+    
+    
     
     return YES;
 }

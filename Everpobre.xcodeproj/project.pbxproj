@@ -21,6 +21,9 @@
 		DB4E8B741A7F916C00B5EC78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4E8B731A7F916C00B5EC78 /* Images.xcassets */; };
 		DB4E8B771A7F916C00B5EC78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4E8B751A7F916C00B5EC78 /* LaunchScreen.xib */; };
 		DB4E8B831A7F916D00B5EC78 /* EverpobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */; };
+		DBD296871A82211100D0E5EE /* YOSNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD296861A82211100D0E5EE /* YOSNotebooksViewController.m */; };
+		DBD2968A1A8238F400D0E5EE /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD296891A8238F400D0E5EE /* AGTCoreDataTableViewController.m */; };
+		DBD2968E1A823E2200D0E5EE /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD2968D1A823E2200D0E5EE /* UIViewController+Navigation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		DB4E8B7C1A7F916C00B5EC78 /* EverpobreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverpobreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4E8B811A7F916D00B5EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverpobreTests.m; sourceTree = "<group>"; };
+		DBD296851A82211100D0E5EE /* YOSNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSNotebooksViewController.h; path = Everpobre/YOSNotebooksViewController.h; sourceTree = "<group>"; };
+		DBD296861A82211100D0E5EE /* YOSNotebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSNotebooksViewController.m; path = Everpobre/YOSNotebooksViewController.m; sourceTree = "<group>"; };
+		DBD296881A8238F400D0E5EE /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataTableViewController.h; path = Everpobre/AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		DBD296891A8238F400D0E5EE /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataTableViewController.m; path = Everpobre/AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		DBD2968C1A823E2200D0E5EE /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		DBD2968D1A823E2200D0E5EE /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +111,7 @@
 		DB4E8B6B1A7F916C00B5EC78 /* Everpobre */ = {
 			isa = PBXGroup;
 			children = (
+				DBD2968B1A823DC600D0E5EE /* Categories */,
 				DB4E8B8C1A7F950000B5EC78 /* Models */,
 				DB4E8B701A7F916C00B5EC78 /* AppDelegate.h */,
 				DB4E8B711A7F916C00B5EC78 /* AppDelegate.m */,
@@ -141,6 +151,8 @@
 		DB4E8B8C1A7F950000B5EC78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBD296881A8238F400D0E5EE /* AGTCoreDataTableViewController.h */,
+				DBD296891A8238F400D0E5EE /* AGTCoreDataTableViewController.m */,
 				DB4D04311A80D879001A43BB /* AGTCoreDataStack.h */,
 				DB4D04321A80D879001A43BB /* AGTCoreDataStack.m */,
 				DB4D041C1A80D0AE001A43BB /* YOSNote.h */,
@@ -153,6 +165,8 @@
 				DB4D04191A80CBF7001A43BB /* YOSEverpobreBaseClass.h */,
 				DB4D041A1A80CBF7001A43BB /* YOSEverpobreBaseClass.m */,
 				DB4D042B1A80D189001A43BB /* Model.xcdatamodeld */,
+				DBD296851A82211100D0E5EE /* YOSNotebooksViewController.h */,
+				DBD296861A82211100D0E5EE /* YOSNotebooksViewController.m */,
 			);
 			name = Models;
 			path = ..;
@@ -169,6 +183,15 @@
 				DB4D042A1A80D189001A43BB /* _YOSPhotoContainer.m */,
 			);
 			name = Machine;
+			sourceTree = "<group>";
+		};
+		DBD2968B1A823DC600D0E5EE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DBD2968C1A823E2200D0E5EE /* UIViewController+Navigation.h */,
+				DBD2968D1A823E2200D0E5EE /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +296,13 @@
 				DB4D04331A80D879001A43BB /* AGTCoreDataStack.m in Sources */,
 				DB4E8B721A7F916C00B5EC78 /* AppDelegate.m in Sources */,
 				DB4D042D1A80D189001A43BB /* _YOSNote.m in Sources */,
+				DBD296871A82211100D0E5EE /* YOSNotebooksViewController.m in Sources */,
+				DBD2968E1A823E2200D0E5EE /* UIViewController+Navigation.m in Sources */,
 				DB4D04241A80D0AE001A43BB /* YOSPhotoContainer.m in Sources */,
 				DB4D041B1A80CBF7001A43BB /* YOSEverpobreBaseClass.m in Sources */,
 				DB4D042E1A80D189001A43BB /* _YOSNotebook.m in Sources */,
 				DB4D04221A80D0AE001A43BB /* YOSNote.m in Sources */,
+				DBD2968A1A8238F400D0E5EE /* AGTCoreDataTableViewController.m in Sources */,
 				DB4E8B6F1A7F916C00B5EC78 /* main.m in Sources */,
 				DB4D04301A80D189001A43BB /* Model.xcdatamodeld in Sources */,
 				DB4D04231A80D0AE001A43BB /* YOSNotebook.m in Sources */,
