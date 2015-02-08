@@ -203,7 +203,8 @@
     
     
     NSError *err;
-    NSArray *res = [self.context executeFetchRequest:req error:&err];
+    NSArray *res = [self.context executeFetchRequest:req
+                                               error:&err];
     
     if (!res) {
         

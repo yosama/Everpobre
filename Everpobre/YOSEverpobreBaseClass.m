@@ -38,7 +38,6 @@
 
 
 
-
 #pragma mark KVO
 
 -(void) setupKVO {
@@ -58,7 +57,6 @@
     }
     
 }
-
 
 
 -(NSArray *) observableKeys {
