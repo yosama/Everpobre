@@ -22,6 +22,11 @@
 		DB4E8B771A7F916C00B5EC78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4E8B751A7F916C00B5EC78 /* LaunchScreen.xib */; };
 		DB4E8B831A7F916D00B5EC78 /* EverpobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */; };
 		DBC0A4E81A87C7830058904E /* No_Image_Available.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC0A4E71A87C7830058904E /* No_Image_Available.png */; };
+		DBC967C31A8A166E00BEB254 /* _YOSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC967C21A8A166E00BEB254 /* _YOSLocation.m */; };
+		DBC967C61A8A168300BEB254 /* YOSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC967C51A8A168300BEB254 /* YOSLocation.m */; };
+		DBC967CD1A8A283E00BEB254 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC967C81A8A283E00BEB254 /* UIImage+Alpha.m */; };
+		DBC967CE1A8A283E00BEB254 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC967CA1A8A283E00BEB254 /* UIImage+Resize.m */; };
+		DBC967CF1A8A283E00BEB254 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC967CC1A8A283E00BEB254 /* UIImage+RoundedCorner.m */; };
 		DBCB3DF01A83708600EAA7A4 /* YOSNotebookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCB3DEE1A83708600EAA7A4 /* YOSNotebookTableViewCell.m */; };
 		DBCB3DF11A83708600EAA7A4 /* YOSNotebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCB3DEF1A83708600EAA7A4 /* YOSNotebookTableViewCell.xib */; };
 		DBCB3DF71A83785700EAA7A4 /* YOSPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCB3DF51A83785700EAA7A4 /* YOSPhotoTableViewCell.m */; };
@@ -80,6 +85,18 @@
 		DB4E8B811A7F916D00B5EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB4E8B821A7F916D00B5EC78 /* EverpobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverpobreTests.m; sourceTree = "<group>"; };
 		DBC0A4E71A87C7830058904E /* No_Image_Available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = No_Image_Available.png; sourceTree = "<group>"; };
+		DBC967BF1A8A0B5700BEB254 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		DBC967C01A8A115D00BEB254 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		DBC967C11A8A166E00BEB254 /* _YOSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _YOSLocation.h; path = Everpobre/_YOSLocation.h; sourceTree = "<group>"; };
+		DBC967C21A8A166E00BEB254 /* _YOSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _YOSLocation.m; path = Everpobre/_YOSLocation.m; sourceTree = "<group>"; };
+		DBC967C41A8A168300BEB254 /* YOSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSLocation.h; path = Everpobre/YOSLocation.h; sourceTree = "<group>"; };
+		DBC967C51A8A168300BEB254 /* YOSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSLocation.m; path = Everpobre/YOSLocation.m; sourceTree = "<group>"; };
+		DBC967C71A8A283E00BEB254 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		DBC967C81A8A283E00BEB254 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		DBC967C91A8A283E00BEB254 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		DBC967CA1A8A283E00BEB254 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		DBC967CB1A8A283E00BEB254 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		DBC967CC1A8A283E00BEB254 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		DBCB3DED1A83708600EAA7A4 /* YOSNotebookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOSNotebookTableViewCell.h; sourceTree = "<group>"; };
 		DBCB3DEE1A83708600EAA7A4 /* YOSNotebookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOSNotebookTableViewCell.m; sourceTree = "<group>"; };
 		DBCB3DEF1A83708600EAA7A4 /* YOSNotebookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YOSNotebookTableViewCell.xib; sourceTree = "<group>"; };
@@ -159,6 +176,7 @@
 				DB4E8B731A7F916C00B5EC78 /* Images.xcassets */,
 				DB4E8B751A7F916C00B5EC78 /* LaunchScreen.xib */,
 				DB4E8B6C1A7F916C00B5EC78 /* Supporting Files */,
+				DBC967BF1A8A0B5700BEB254 /* Settings.h */,
 			);
 			path = Everpobre;
 			sourceTree = "<group>";
@@ -192,6 +210,8 @@
 		DB4E8B8C1A7F950000B5EC78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBC967C41A8A168300BEB254 /* YOSLocation.h */,
+				DBC967C51A8A168300BEB254 /* YOSLocation.m */,
 				DB4D04311A80D879001A43BB /* AGTCoreDataStack.h */,
 				DB4D04321A80D879001A43BB /* AGTCoreDataStack.m */,
 				DB4D041C1A80D0AE001A43BB /* YOSNote.h */,
@@ -212,6 +232,8 @@
 		DB4E8BA21A7FABC500B5EC78 /* Machine */ = {
 			isa = PBXGroup;
 			children = (
+				DBC967C11A8A166E00BEB254 /* _YOSLocation.h */,
+				DBC967C21A8A166E00BEB254 /* _YOSLocation.m */,
 				DB4D04251A80D189001A43BB /* _YOSNote.h */,
 				DB4D04261A80D189001A43BB /* _YOSNote.m */,
 				DB4D04271A80D189001A43BB /* _YOSNotebook.h */,
@@ -274,6 +296,12 @@
 		DBD2968B1A823DC600D0E5EE /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				DBC967C71A8A283E00BEB254 /* UIImage+Alpha.h */,
+				DBC967C81A8A283E00BEB254 /* UIImage+Alpha.m */,
+				DBC967C91A8A283E00BEB254 /* UIImage+Resize.h */,
+				DBC967CA1A8A283E00BEB254 /* UIImage+Resize.m */,
+				DBC967CB1A8A283E00BEB254 /* UIImage+RoundedCorner.h */,
+				DBC967CC1A8A283E00BEB254 /* UIImage+RoundedCorner.m */,
 				DBD2968C1A823E2200D0E5EE /* UIViewController+Navigation.h */,
 				DBD2968D1A823E2200D0E5EE /* UIViewController+Navigation.m */,
 			);
@@ -324,6 +352,7 @@
 		DB4E8B611A7F916C00B5EC78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YOS;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = YOS;
 				TargetAttributes = {
@@ -386,17 +415,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC967C31A8A166E00BEB254 /* _YOSLocation.m in Sources */,
 				DBCB3DFC1A837AA800EAA7A4 /* YOSTextTableViewCell.m in Sources */,
 				DB4D04331A80D879001A43BB /* AGTCoreDataStack.m in Sources */,
 				DB4E8B721A7F916C00B5EC78 /* AppDelegate.m in Sources */,
+				DBC967C61A8A168300BEB254 /* YOSLocation.m in Sources */,
 				DB4D042D1A80D189001A43BB /* _YOSNote.m in Sources */,
 				DBCB3E061A837CF300EAA7A4 /* YOSNameTableViewCell.m in Sources */,
 				DBCB3E011A837BE100EAA7A4 /* YOSDatesTableViewCell.m in Sources */,
 				DBD296871A82211100D0E5EE /* YOSNotebooksViewController.m in Sources */,
 				DBCB3DF01A83708600EAA7A4 /* YOSNotebookTableViewCell.m in Sources */,
+				DBC967CF1A8A283E00BEB254 /* UIImage+RoundedCorner.m in Sources */,
 				DBD2968E1A823E2200D0E5EE /* UIViewController+Navigation.m in Sources */,
 				DBD296911A8243A200D0E5EE /* YOSNoteViewController.m in Sources */,
 				DBCB3DF71A83785700EAA7A4 /* YOSPhotoTableViewCell.m in Sources */,
+				DBC967CD1A8A283E00BEB254 /* UIImage+Alpha.m in Sources */,
 				DBCB3E0A1A8386D200EAA7A4 /* YOSNoteTableViewController.m in Sources */,
 				DB4D04241A80D0AE001A43BB /* YOSPhotoContainer.m in Sources */,
 				DB4D041B1A80CBF7001A43BB /* YOSEverpobreBaseClass.m in Sources */,
@@ -406,6 +439,7 @@
 				DB4E8B6F1A7F916C00B5EC78 /* main.m in Sources */,
 				DB4D04301A80D189001A43BB /* Model.xcdatamodeld in Sources */,
 				DBCB3E0E1A83A7FA00EAA7A4 /* YOSPhotoViewController.m in Sources */,
+				DBC967CE1A8A283E00BEB254 /* UIImage+Resize.m in Sources */,
 				DB4D04231A80D0AE001A43BB /* YOSNotebook.m in Sources */,
 				DB4D042F1A80D189001A43BB /* _YOSPhotoContainer.m in Sources */,
 			);
@@ -607,9 +641,10 @@
 		DB4D042B1A80D189001A43BB /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				DBC967C01A8A115D00BEB254 /* Model 2.xcdatamodel */,
 				DB4D042C1A80D189001A43BB /* Model.xcdatamodel */,
 			);
-			currentVersion = DB4D042C1A80D189001A43BB /* Model.xcdatamodel */;
+			currentVersion = DBC967C01A8A115D00BEB254 /* Model 2.xcdatamodel */;
 			name = Model.xcdatamodeld;
 			path = Everpobre/Model.xcdatamodeld;
 			sourceTree = "<group>";

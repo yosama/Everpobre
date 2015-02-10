@@ -7,6 +7,7 @@
 //
 
 #import "YOSPhotoViewController.h"
+#import "UIImage+Resize.h"
 
 @interface YOSPhotoViewController ()
 
@@ -177,15 +178,25 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     //OJO PICO DE MEMORIA
-    self.model.photo.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    UIImage *img = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    //Reducimos la imagen
+    CGSize newSize = CGSizeMake(img.size.width * 0.5, img.size.height *0.5);
+    
+    img = [img resizedImage:newSize interpolationQuality:kCGInterpolationHigh];
+    
+    
+    self.model.photo.image = img;
+    
     
     //ocultar el picker
     [self dismissViewControllerAnimated:YES
                              completion:nil];
     
-    
-    
 }
+
+
+
 
 
 
