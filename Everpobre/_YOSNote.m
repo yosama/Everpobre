@@ -11,6 +11,7 @@ const struct YOSNoteAttributes YOSNoteAttributes = {
 };
 
 const struct YOSNoteRelationships YOSNoteRelationships = {
+	.location = @"location",
 	.notebook = @"notebook",
 	.photo = @"photo",
 };
@@ -51,6 +52,8 @@ const struct YOSNoteRelationships YOSNoteRelationships = {
 @dynamic name;
 
 @dynamic text;
+
+@dynamic location;
 
 @dynamic notebook;
 

@@ -15,10 +15,10 @@
 +(CGFloat)height;
 +(NSString *) cellId;
 
+
+@property (weak, nonatomic) IBOutlet UILabel *notesView;
+
 @property (weak, nonatomic) IBOutlet UILabel *nameView;
-
-@property (weak, nonatomic) IBOutlet UILabel *notesViews;
-
 
 
 @end

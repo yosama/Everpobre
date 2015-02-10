@@ -12,10 +12,12 @@ extern const struct YOSNoteAttributes {
 } YOSNoteAttributes;
 
 extern const struct YOSNoteRelationships {
+	__unsafe_unretained NSString *location;
 	__unsafe_unretained NSString *notebook;
 	__unsafe_unretained NSString *photo;
 } YOSNoteRelationships;
 
+@class YOSLocation;
 @class YOSNotebook;
 @class YOSPhotoContainer;
 
@@ -44,6 +46,10 @@ extern const struct YOSNoteRelationships {
 
 //- (BOOL)validateText:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) YOSLocation *location;
+
+//- (BOOL)validateLocation:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) YOSNotebook *notebook;
 
 //- (BOOL)validateNotebook:(id*)value_ error:(NSError**)error_;
@@ -67,6 +73,9 @@ extern const struct YOSNoteRelationships {
 
 - (NSString*)primitiveText;
 - (void)setPrimitiveText:(NSString*)value;
+
+- (YOSLocation*)primitiveLocation;
+- (void)setPrimitiveLocation:(YOSLocation*)value;
 
 - (YOSNotebook*)primitiveNotebook;
 - (void)setPrimitiveNotebook:(YOSNotebook*)value;

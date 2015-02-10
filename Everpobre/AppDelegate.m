@@ -34,6 +34,9 @@
     // Create the stack
     self.stack  = [AGTCoreDataStack coreDataStackWithModelName:@"Model"];
     
+    
+    [self autosave];
+
     // Creamos datos
     [self createDummyData];
     
@@ -59,16 +62,21 @@
     // assign root controllNer
     self.window.rootViewController = [notebookVC yosWrapperInNavigation];
     
-    
-    
     return YES;
 }
 
+//Aqui es el mejor momento para guardar los datos
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    [self.stack saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"Pos estamos jodidos :%@",error);
+    }];
+    
+    
+    
 }
 
+//Aqui es el mejor momento para guardar los datos
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
@@ -171,7 +179,6 @@
     res = [self.stack.context executeFetchRequest:request
                                             error:&err];
     
-    
     if (!res) {
         NSLog(@"Error al buscar de nuevo: %@", res);
     }
@@ -187,6 +194,19 @@
     
 }
 
+
+
+-(void) autosave {
+    NSLog(@"autosaving");
+    
+    [self.stack saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"error at autosave %@",error);
+        
+    }];
+    [self performSelector:@selector(autosave)
+               withObject:self
+               afterDelay:AUTO_SAVE_DELAY];
+}
 
 
 

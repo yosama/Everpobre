@@ -56,7 +56,7 @@
                                                                      forIndexPath:indexPath];
     //Configure model to view
     cell.nameView.text = notebook.name;
-    cell.notesViews.text = [NSString stringWithFormat:@"(%lu)",(unsigned long)notebook.notes.count];
+    cell.notesView.text = [NSString stringWithFormat:@"(%lu)",(unsigned long)notebook.notes.count];
     
    
     

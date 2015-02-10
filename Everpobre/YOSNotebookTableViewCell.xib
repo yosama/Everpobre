@@ -28,9 +28,8 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="nameView" destination="Gu5-QS-oHS" id="0vz-li-QCl"/>
-                <outlet property="noteView" destination="Gu5-QS-oHS" id="yOc-g5-2EZ"/>
-                <outlet property="notesViews" destination="p7A-ov-M9b" id="raO-gm-zvq"/>
+                <outlet property="nameView" destination="p7A-ov-M9b" id="yZV-Ab-D8r"/>
+                <outlet property="notesView" destination="Gu5-QS-oHS" id="V4e-n2-jpg"/>
             </connections>
             <point key="canvasLocation" x="197" y="225.5"/>
         </tableViewCell>

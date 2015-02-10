@@ -94,6 +94,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+    [self registerNibs];
     switch (indexPath.section) {
             
         case NAME_SECTION: {
